@@ -1,0 +1,6 @@
+<%= render @customers %>
+<% @customers.each do |customer| %>
+	<%= customer.fullname %>
+	<%= link_to 'Edit', edit_customer_path(customer) %>
+<% end %>
+<%= link_to 'Index', index_path %>
